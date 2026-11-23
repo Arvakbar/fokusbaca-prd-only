@@ -1,0 +1,30 @@
+:root {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #202b24;
+  background: #f8f7f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --paper: #f8f7f2;
+  --white: #fffefa;
+  --ink: #202b24;
+  --muted: #505e54;
+  --green: #28533a;
+  --dark-green: #193528;
+  --line: #d7dcd0;
+  --tint: #e9efe1;
+  --serif: Georgia, 'Times New Roman', serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; min-width: 0; }
+h1, h2, p, dl, dd { margin: 0; }
+a { color: inherit; }
+input, button, select { font: inherit; }
+button, select { cursor: pointer; }
+
+:is(a, button, input, select, main, h2):focus-visible {
+  outline: 3px solid #13694b;
+  outline-offset: 3px;
+}
+
+h1[tabindex]:focus { outline: none; }
